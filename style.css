@@ -16,58 +16,49 @@ body{
 }
 header h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     color: rgb(255, 255, 255);
     text-shadow: 3px 7px 6px rgb(0, 0, 0);
 }
-
 .wrapper{
   max-width: 500px;
   padding: 30px 0 1px;
   margin: 0 auto;
-  background:-o-linear-gradient(black white green);
- 
-  
+  background:-o-linear-gradient(black white green); 
 }
 .task-input{
   height: 52px;
-  padding: 0px 20%;
-  position: relative;
-  
+  padding: 0px 10%;
+  margin: 15px;
 }
-
 .task-input input{
   height: 100%;
   width: 100%;
-
-
   outline: none;
   font-size: 18px;
   border-radius: 10px;
-  padding: 0 20px 0 53px;
+  padding: 0 20px ;
   border: 2px solid rgb(3, 0, 0);
 }
-
 .task-input input::placeholder{
   color:#ff0000;
-
+  text-align: center;
 }
 .controls, li{
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   color: #ffffff;
 }
 .controls,span{
   color: #ffffff;
+  margin-left: 20px;
 }
 .controls{
-  padding: 18px 25px;
- 
+  padding: 18px 20px; 
 }
 .filters span{
-  margin: 0 8px;
+  margin:0 25px;
   font-size: 17px;
   color: #ff0000;
   cursor: pointer;
@@ -82,8 +73,8 @@ header h1{
   font-size: 13px;
   padding: 7px 13px;
   border-radius: 4px;
-  letter-spacing: 0.3px;
   pointer-events: none;
+  text-align: center;
   transition: transform 0.25s ease;
   background-color: #ff0000;
 }
@@ -99,11 +90,6 @@ header h1{
   margin-right: 5px;
   padding: 0 20px 10px 25px;
 }
-.task-box.overflow{
-  overflow-y: auto;
-  max-height: 300px;
-}
-
 .task-box .task{
   list-style: none;
   font-size: 17px;
@@ -111,7 +97,6 @@ header h1{
   padding-bottom: 16px;
   align-items: flex-start;
   border-bottom: 3px solid #ff0000;
-
 }
 .task-box .task:last-child{
   margin-bottom: 0;
@@ -121,10 +106,6 @@ header h1{
 .task-box .task label{
   display: flex;
   align-items: flex-start;
-}
-.task label input{
-  margin-top: 7px;
-  accent-color: #3C87FF;
 }
 .task label p{
   user-select: none;
@@ -184,15 +165,15 @@ header h1{
   padding-right: 8px;
 }
 
-@media(max-width :400px){
+@media(max-width :720px){
   body{
     padding: 0 10px;
     }
   .wrapper{
-    padding: 20px 0;
+    padding: 10px 0;
   }
   .filters span{
-    margin: 0 20px;
+    margin: 0 5px;
   }
   .task-input{
     padding: 0 20px;
@@ -200,11 +181,9 @@ header h1{
   .controls{
     padding: 18px 20px;
   }
-  .task-box{
-    margin-top: 20px;
-    margin-right: 5px;
-    padding: 0 15px 10px 20px;
-  }
+h1{
+  text-align: center;
+}
   .task label input{
     margin-top:  4px;
   }
